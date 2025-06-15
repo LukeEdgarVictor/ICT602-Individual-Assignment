@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightbrown"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/txtHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill History"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:background="@color/lightbrown"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F8F9FA"
+        android:elevation="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <ListView
+            android:id="@+id/historyListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black"
+            android:dividerHeight="1dp"
+            android:padding="0dp"
+            android:background="#F8F9FA"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Delete All"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"/>
+
+</LinearLayout>
